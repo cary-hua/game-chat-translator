@@ -1,0 +1,11 @@
+# 行尾规则。不写这个的话，别人在 Linux/macOS 上 clone 下来，
+# .bat 会变成 LF 换行 —— cmd 解析时会把每行前两个字符吃掉，
+# 报「'ho' 不是内部或外部命令」这种莫名其妙的错。
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# 二进制，别做任何转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary

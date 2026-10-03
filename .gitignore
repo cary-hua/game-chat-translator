@@ -1,0 +1,34 @@
+# ────────────── 你的私有数据，绝不提交 ──────────────
+# config.json 里有 API key；history.jsonl 里是你翻过的每一条聊天内容。
+# 这两个漏出去，等于把钱包和聊天记录一起发到网上。
+config.json
+config.json.bak
+config.json.tmp
+history.jsonl
+captures/
+
+# ────────────── Python ──────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ────────────── 构建产物 ──────────────
+build/
+dist/
+发布/
+*.zip
+*.spec
+
+# ────────────── 调试产物 ──────────────
+*.log
+*.jpg
+*.png
+!assets/*.png
+
+# ────────────── 编辑器 ──────────────
+.vscode/
+.idea/
+*.swp
+*~
