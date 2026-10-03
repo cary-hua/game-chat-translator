@@ -65,18 +65,27 @@ PaddleOCR 之类的重型依赖，整个项目只用四个纯 Python 库。
 
 ---
 
-## 安装
+## 下载
 
-需要 Python 3.10 以上（本项目在 **3.14.6** 上开发并验证）。
+  **只是拿来用**
+  去 [**Releases**](https://github.com/cary-hua/game-chat-translator/releases/latest)
+  下载最新那个 zip，解压，双击里面的 exe。
+  **不用装 Python，不用命令行。**
 
-```bash
-git clone <仓库地址>
-cd game-translator
-pip install -r requirements.txt
-```
+  > 第一次运行 Windows 可能弹「已保护你的电脑」（SmartScreen）——
+  > PyInstaller 打包的程序常见误报，点「更多信息」→「仍要运行」。
+  > 杀毒软件报毒同理。
 
-四个依赖全是纯 Python，没有 C 扩展，装起来不会跟环境打架。
+  **想改代码 / 跑源码**：需要 Python 3.10 以上（本项目在 3.14.6 上开发验证）。
 
+  ```bash
+  git clone https://github.com/cary-hua/game-chat-translator.git
+  cd game-chat-translator
+  pip install -r requirements.txt
+  python main.py
+  ```
+
+  四个依赖全是纯 Python，没有 C 扩展，装起来不会跟环境打架。
 ---
 
 ## 配置 API key
